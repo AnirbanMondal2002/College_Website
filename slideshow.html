@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <div class="slideshow-container">
+            <div class="JICSE slides">
+                <div class="numbertext">02/20</div>
+                <img src="./Russian Document/Scrolling image/2.png">
+            </div>
+            <div class="JICSE slides">
+                <div class="numbertext">03/20</div>
+                <img src="./Russian Document/Scrolling image/3.png">
+            </div>
+            <div class="JICSE slides">
+                <div class="numbertext">04/20</div>
+                <img src="./Russian Document/Scrolling image/4.jpg">
+            </div>
+            <div class="JICSE slides">
+                <div class="numbertext">05/20</div>
+                <img src="./Russian Document/Scrolling image/5.jpg">
+            </div>
+            <div class="JICSE slides">
+                <div class="numbertext">06/20</div>
+                <img src="./Russian Document/Scrolling image/6.jpg">
+            </div>
+            <div class="JICSE slides">
+                <div class="numbertext">07/20</div>
+                <img src="./Russian Document/Scrolling image/7.jpg">
+            </div>
+            <div class="JICSE slides">
+                <div class="numbertext">08/20</div>
+                <img src="./Russian Document/Scrolling image/8.png">
+            </div>
+            <div class="JICSE slides">
+                <div class="numbertext">09/20</div>
+                <img src="./Russian Document/Scrolling image/9.jpg">
+            </div>
+            <div class="JICSE slides">
+                <div class="numbertext">10/20</div>
+                <img src="./Russian Document/Scrolling image/10.jpg">
+            </div>
+            <div class="JICSE slides">
+                <div class="numbertext">11/20</div>
+                <img src="./Russian Document/Scrolling image/11.jpg">
+            </div>
+            <div class="JICSE slides">
+                <div class="numbertext">12/20</div>
+                <img src="./Russian Document/Scrolling image/12.jpg">
+            </div>
+            <div class="JICSE slides">
+                <div class="numbertext">13/20</div>
+                <img src="./Russian Document/Scrolling image/13.jpg">
+            </div>
+            <div class="JICSE slides">
+                <div class="numbertext">14/20</div>
+                <img src="./Russian Document/Scrolling image/14.jpg">
+            </div>
+            <div class="JICSE slides">
+                <div class="numbertext">15/20</div>
+                <img src="./Russian Document/Scrolling image/15.jpg">
+            </div>
+            
+        
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        
+        </div>
+        <script>
+            var slideIndex=0;
+            showSlides();
+            function showSlides(){
+                var i;
+                var slides = document.getElementsByClassName("slidesfade");
+                var dots = document.getElementsByClassName("dot");
+                for(i=0;i<slides.length;i++)
+                {
+                    slides[i].style.display = "none";
+
+                }
+                slideIndex++;
+                if(slideIndex> slides.length) {slideIndex = 1}
+                for(i=0;i<dots.length;i++){
+                    dots[i].className = dots[i].className.replace(" active", "");
+
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000);
+
+            }
+        </script>
+    </body>
+</html>
